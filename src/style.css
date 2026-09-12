@@ -1,0 +1,78 @@
+:root {
+  --accent-color: #e85999; /* Chess Pink */
+  --main-color: #363535; /* Dark Gray */
+  --background-color: #f6f6f6; /* Light background for luxury feel */
+  --text-font-family:
+    "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--text-font-family);
+
+  background-color: var(
+    --background-color
+  ); /* optional: light background for luxury feel */
+  color: var(--main-color); /* your palette's dark gray */
+}
+
+.container-fluid {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Make navbar wider + more balanced */
+.nav {
+  width: 200px; /* increased from 140px */
+  padding: 2rem 1rem;
+  border-right: 1px solid #e0e0e0;
+  font-size: 1.1rem; /* optional: makes it feel more luxury */
+}
+.nav .nav-item {
+  margin-bottom: 2em; /* increased spacing for better readability */
+  padding: 0.5em 0; /* optional: adds padding for better click area */
+}
+.nav-link {
+  white-space: nowrap; /* keeps text on one line */
+  display: inline-block; /* ensures consistent spacing */
+  font-size: 1.1rem; /* optional: adjust for readability */
+  color: var(--main-color); /* match your palette */
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: var(--accent-color); /* your Chess Pink accent */
+  font-weight: bold; /* optional: adds emphasis on hover */
+  cursor: pointer; /* indicates interactivity */
+}
+
+/* Control hero image size */
+.img-fluid {
+  height: 85vh; /* reduced from 100vh */
+  width: auto;
+  object-fit: contain; /* prevents stretching */
+  margin-left: 2rem;
+  display: block;
+}
+
+.pearlshand {
+  justify-content: flex-end;
+  display: flex;
+}
+h2,
+.display-4 {
+  font-size: 4rem; /* optional: adjust for luxury feel */
+  margin-bottom: 1rem; /* optional: adds spacing below headings */
+  text-align: center; /* optional: centers headings for better aesthetics */
+  font-family: var(--text-font-family); /* ensures consistent font usage */
+  font-weight: 600; /* optional: adds a touch of elegance */
+  margin-top: 10px;
+}
+p {
+  font-size: 15px; /* optional: adjust for readability */
+  line-height: 1.6; /* optional: improves text flow */
+  margin-bottom: 1rem; /* optional: adds spacing below paragraphs */
+  text-align: justify; /* optional: creates a clean block of text */
+}
