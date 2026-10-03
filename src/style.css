@@ -81,7 +81,9 @@
   --accent-color: #e85999; /* Chess Pink */
   --main-color: #363535; /* Dark Gray */
   --background-color: #f6f6f6; /* Soft luxury background */
-  --porcelain-color: #ebe4d9ff; /* Porcelain white */
+  --off-pearl: #ebe4d9ff; /* Porcelain white */
+  --muted-color: #adadad;
+  --shadow: box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --text-font-family:
     "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
     Arial, sans-serif;
@@ -212,7 +214,6 @@ p {
 .highlight {
   color: var(--accent-color);
   font-weight: 600;
-  margin-right: 1rem;
 }
 /* ================================
 TABLE OF CONTENTS  
@@ -261,6 +262,11 @@ li {
 /* ================================
    02 - ABOUT ME
 ================================ */
+.about-image {
+  border-radius: 16rem;
+  border: 5px solid #f7bce3;
+}
+
 .pinkphone-image {
   object-fit: contain;
   justify-content: center;
@@ -293,8 +299,7 @@ li {
   height: auto;
   border-radius: 15px 15px 0 0;
 }
-button {
-  background-color: var(--porcelain-color);
+btn {
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 15px;
@@ -304,7 +309,7 @@ button {
   justify-content: center;
   margin-bottom: 10rem;
 }
-button:hover {
+btn:hover {
   background-color: var(--accent-color);
   color: white;
 }
@@ -322,8 +327,9 @@ button:hover {
 }
 
 .pearls-image {
-  width: 5rem;
+  width: 10rem;
   justify-content: center;
+  position: absolute;
 }
 .studiotones {
   width: 65em;
@@ -332,4 +338,68 @@ button:hover {
 .tones {
   text-align: center;
   font-size: 18px;
+}
+.bubble {
+  background-color: #d8d8d8;
+  margin-top: 5rem;
+  padding: 1em;
+  text-align: center;
+  border-radius: 60px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
+  font-size: 14px;
+}
+
+.pink {
+  font-weight: bold;
+  color: #e85999;
+}
+.maine {
+  font-weight: bold;
+  color: #363535;
+}
+.white {
+  font-weight: bold;
+  color: #f6f6f6;
+}
+
+.pearl {
+  font-weight: bold;
+  color: #ebe4d9;
+}
+.muted {
+  font-weight: bold;
+  color: #adadad;
+}
+
+/*=============================
+INSPO
+===========================*/
+.inspo,
+.tones {
+  background-color: var(--muted);
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.caption {
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 8px;
+  font-size: 14px;
+}
+.inspo-img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.inspo-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.footer {
+  margin-top: 20px;
 }
