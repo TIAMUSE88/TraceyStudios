@@ -83,6 +83,7 @@
   --background-color: #f6f6f6; /* Soft luxury background */
   --off-pearl: #ebe4d9ff; /* Porcelain white */
   --muted-color: #adadad;
+  --wool: #ede8e4;
   --shadow: box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   --text-font-family:
     "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue",
@@ -402,4 +403,23 @@ INSPO
 
 .footer {
   margin-top: 20px;
+}
+
+.notes {
+  background-color: var(--wool);
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+}
+
+.concept-notes {
+  padding: 30px 20px;
+  font-size: 1.2rem;
+}
+/* ================================
+   05 - CONTACT
+================================ */
+.small {
+  font-family: var(--text-font-family);
+  font-size: 0.875em;
 }
