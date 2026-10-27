@@ -502,3 +502,46 @@ ul.tones {
   font-family: var(--text-font-family);
   font-size: 0.875em;
 }
+.contact-email,
+.contact-github,
+.contact-linkedin {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Email button */
+.contact-email {
+  background-color: #333;
+  color: white;
+}
+
+/* GitHub button */
+.contact-github {
+  background-color: rgb(109, 11, 122);
+  color: white;
+}
+
+/* LinkedIn button */
+.contact-linkedin {
+  background-color: #0a66c2;
+  color: white;
+}
+
+/* Hover effects */
+.contact-email:hover,
+.contact-github:hover,
+.contact-linkedin:hover {
+  opacity: 0.85;
+}
+footer {
+  padding: var(--spacing);
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--button-shadow);
+  text-align: center;
+  margin-top: 200px; /* default for mobile/tablets */
+  width: 100%;
+}
